@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "VistaSansBook";
+  src: url("/src/VistaSansBook.woff2") format("woff2"),
+    url("/src/VistaSansBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "VistaSansLight";
+  src: url("/src/VistaSansLight.woff2") format("woff2"),
+    url("/src/VistaSansLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "VistaSansMed";
+  src: url("/src/VistaSansMed.woff2") format("woff2"),
+    url("/src/VistaSansMed.woff") format("woff2");
+}
+
+@font-face {
+  font-family: "VistaSansReg";
+  src: url("/src/VistaSansReg.woff2") format("woff2"),
+    url("/src/VistaSansReg.woff") format("woff");
+}
+
+@font-face {
+  font-family: "VistaSlabBook";
+  src: url("/src/VistaSlabBook.woff2") format("woff2"),
+    url("/src/VistaSlabBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "VistaSlabLight";
+  src: url("/src/VistaSlabLight.woff2") format("woff2"),
+    url("/src/VistaSlabLight.woff") format("woff");
+}
+
+body {
+  color: #052f43;
+  font-family: "VistaSansReg";
+}
+
+h1 {
+  font-family: "VistaSlabLight, VistaSansLight";
+  font-size: 60px;
+}
+
+h4 {
+  font-family: "VistaSansMed";
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
+}
+
+p.highlighted {
+  background-color: #e0dfdd;
+  padding: 15px;
+}
+
+button.accordion-button.collapsed {
+  color: #052f43;
+  font-family: "VistaSlabBook, VistaSansBook";
+  font-size: 34px;
+  padding: 16px 0;
+}
+
+button.accordion-button.collapsed::after {
+  background-image: url("/images/secondary-plus.svg");
+  background-size: auto;
+  color: #052f43;
+}
+
+button.accordion-button {
+  color: #052f43;
+  font-family: "VistaSlabBook, VistaSansBook";
+  font-size: 34px;
+  padding: 16px 0;
+}
+
+#flush-headingThree button,
+#flush-headingFour button,
+#flush-headingFive button {
+  color: #666058;
+  font-family: "VistaSlabBook, VistaSansBook";
+  font-size: 28px;
+}
+
+button.accordion-button:not(.collapsed)::after {
+  background-image: url("/images/secondary-plus.svg");
+  background-size: auto;
+  color: #052f43;
+  transform: rotate(45deg);
+}
+
+button.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #052f43;
+  font-family: "VistaSlabBook, VistaSansBook";
+  font-size: 34px;
+  padding: 16px 0;
+}
+
+div.accordion-body {
+  padding: 16px 0;
+}
